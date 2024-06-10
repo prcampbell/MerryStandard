@@ -20,3 +20,10 @@ void tootOriole()
 	}
 	else abort("Failed to finish the Toot Oriole quest. This prevents us from getting other quests from council");
 }
+
+void tootGetMeat()
+{
+	auto_autosell(min(5, item_amount($item[hamethyst])), $item[hamethyst]);
+	auto_autosell(min(5, item_amount($item[baconstone])), $item[baconstone]);
+	auto_autosell(min(5, item_amount($item[porquoise])), $item[porquoise]);
+}
